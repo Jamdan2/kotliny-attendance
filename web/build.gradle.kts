@@ -1,18 +1,12 @@
 import org.jetbrains.kotlin.gradle.targets.js.webpack.KotlinWebpackConfig.DevServer
 
 plugins {
-    kotlin("js") version "1.4-M1"
-}
-
-repositories {
-    mavenCentral()
-
-    // Remove when kotlin 1.4 is stable
-    maven("https://dl.bintray.com/kotlin/kotlin-eap/")
+    kotlin("js")
 }
 
 dependencies {
     implementation(kotlin("stdlib-js"))
+    compile(project(":common"))
 }
 
 kotlin.target{

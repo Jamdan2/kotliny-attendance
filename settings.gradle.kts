@@ -1,5 +1,6 @@
 rootProject.name = "kotliny-attendance"
 include("web")
+include("common")
 
 pluginManagement {
     repositories {
